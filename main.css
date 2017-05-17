@@ -1,0 +1,45 @@
+body{
+    background: url('Map.jpg');
+    background-size: 100% 100%;
+}
+#colorLayer{
+    height: 100%;
+    width: 100%;
+    background-color:#feda88;
+}
+#map{
+    height: 300px;
+    width: 300px;
+    background:url('Map.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     -webkit-clip-path:polygon(59% 33%, 100% 50%, 50% 100%, 0% 50%);
+}
+#locator{
+    position: absolute;
+    top:50%;
+    left: 50%;
+   animation: move 5s infinite;
+}
+@-webkit-keyframes move{
+    0%{margin-top: -70px;}
+    10%{margin-top: -100px;}
+    20%{margin-top: -70px;}
+    30%{margin-top: -100px;}
+    40%{margin-top: -70px;}
+    50%{margin-top: -100px;
+        transform: rotateY(360deg);
+    }
+    60%{margin-top: -70px;}
+    70%{margin-top: -100px;}
+    80%{margin-top: -70px;}
+    90%{margin-top: -100px;}
+    100%{margin-top: -70px;}
+}
+
+
+
+
